@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script defer rel="preload" src="/scripts/index.js"></script>
+    <script defer src="./scripts/index.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 
     <!--Bootstrap imports-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script defer rel="preload" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script defer rel="preload" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    
+    <!--EmailJS script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <title>Souza's portifolio</title>
 
@@ -19,7 +22,7 @@
     <!--NavBar-->
     <header>
     <div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container-fluid">
             <a href="#" class="navbar-brand"><img src="./img/S-logo.png" alt="Souza's logo" class="logo-img img-fluid"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
@@ -35,8 +38,9 @@
         </nav>
     </div>
     </header>
+
     <!--Main Hero-->
-    <div class="container my-5">  
+    <div class="container hero-conatiner">  
         <div class="container row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <!--Hero texts-->
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -44,8 +48,8 @@
             <p class="text-start">I have a passion for crafting websites that are not only visually appealing but also functional and user-friendly. With my extensive knowledge of HTML, CSS AND JavaScript, I can bring your vision to life by creating responsive, mobile friendly, and cross-browser compatible websites that engage your audience </p>
             <!--Hero Buttons-->
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <button class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" href="#">Work</Button>
-                <button class="btn btn-outline-secondary btn-lg px-4" href="#">Projects</Button>
+                <button class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" onclick="window.location.href='#projectSection'">Projects</Button>
+                <button class="btn btn-outline-secondary btn-lg px-4" onclick="window.location.href='#contactUsSection'">Contact Us</Button>
             </div>
             </div>
             <!--Hero image-->
@@ -54,26 +58,15 @@
             </div>
         </div>
     </div>
-    <!--First Section Work Experience-->
-    <div id="workSection" class="container px-4 py-5">
-        <h2 class="pb-2 border-bottom">Work</h2>
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            <div class="col">
-                <div class="first-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/Ecommerce-card.jpg')"></div>
-            </div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
 
-    </div>
     <!--Projects Hero-->
     <div id="projectSection" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <div class="p-lg-5 mx-auto my-5">
             <h1 class="display-4 fw-normal">Projects</h1>
             <p class="lead fw-normal">
                 Whether you're looking to start an online store, share your ideas with the world or promote your services, I can help you create a website that stands out and drives results. Contact me today to learn how I can bring your vision to life.
             </p>
-            <a class="btn btn-outline-secondary" href="#">Contact me</a>
+            <a class="btn btn-outline-secondary" href="#contactUsSection">Contact me</a>
             <div class="product-device d-none d-md-block">
                 <img class="product-device img-fluid max-width: 100%" src="./img/Projects-intro-1.png" alt="Website building">
             </div>
@@ -82,6 +75,7 @@
             </div>
         </div>
     </div>
+
     <!--Project headlines-->
     <div class="container d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <!--Ecommerce project-->
@@ -105,6 +99,7 @@
             </div>
         </div>
     </div>
+
     <!--Second Line of projects-->
     <div class="container d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <!--Services project-->
@@ -128,8 +123,16 @@
             </div>
         </div>
     </div>
-    <!--Features and Form for contact-->
+
+        <!--First Section Work Experience-->
+    <div id="workSection" class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">About Me</h2>
+        <!--Work in Progress-->
+    </div>
+
     <div id="contactUsSection" class="container px-4 py-5" id="hanging-icons">
+
+        <!--Features-->
         <h2 class="pb-2 border-bottom">Features</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start">
@@ -166,16 +169,56 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="container mb-3">
-                <label for="formControlInput1" class="lead my-3 py-3 form-label">Email address</label>
-                <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="container mb-3">
-                <label for="FormControlTextarea1" class="lead my-3 py-3 form-label">Project request</label>
-                <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
-            </div>
+
+        <!--Contact Us-->
+        <div class="content">
+           <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <h3 class="heading mb-4">Let's talk about everything!</h3>
+                                <p >Give life to your vision.</p>
+                                <p><img src="./img/contact-us.svg" alt="Contact Us image" class="img-fluid"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <form method="post" id="contactForm" name="contactForm" novalidate="novalidate" class="mb-5">
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <textarea class="form-control" name="message" id="message" placeholder="Write your message" cols="30" rows="7"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="submit" class="btn btn-primary py-2 px-4" onsubmit="sendEmail()">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="form-message-warning mt-4"></div>
+                                <div class="form-message-success" style="display: block;">Your message was sent, we'll get back to you soon ! Thank you!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
         </div>
+
+
     </div> 
 </body>
 </html>
