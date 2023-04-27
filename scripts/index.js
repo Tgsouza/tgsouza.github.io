@@ -1,6 +1,5 @@
-alert("Hello World!");
 //CONTACT US FUNCTION USING EMAILJS
-
+/*
 (function(){emailjs.init("9OsFrNgY5SvlJVOdK");})();
 
 function sendEmail(){
@@ -24,4 +23,4 @@ jsemail.sendForm('service_7l0lh51','template_x5jidla', params).then(function(res
 
 document.getElementById("contactForm").reset();
 
-}
+}*/
