@@ -1,0 +1,83 @@
+.logo-img{
+    max-width: 4rem;
+    max-height: 4rem;
+    margin-left: 0;
+    justify-content: left;
+}
+
+.hero-title{
+    font-size: 2.125rem;
+}
+
+.hero-img{
+    max-width: 50rem;
+    max-height: 50rem;
+}
+
+.product-device{
+    position:absolute;
+    right: -10%;
+    bottom: -20%;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 21px;
+    opacity: 0.4;
+}
+
+.product-device2{
+    position:absolute;
+    top: -30%;
+    right: auto;
+    left: -10%;
+    width: 540px;
+    height: 540px;
+    opacity: 0.4;
+}
+
+.ecommerce-project{
+    width: 100%; 
+    height: auto; 
+    border-radius: 21px 21px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-project{
+    width: 100%; 
+    height: auto; 
+    border-radius: 21px 21px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services-project{
+    width: 100%; 
+    height: auto; 
+    border-radius: 21px 21px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one-product-project{
+    width: 100%; 
+    height: auto; 
+    border-radius: 21px 21px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.svg-icon {
+    width: 2em;
+    height: 2em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #4691f6;
+  }
+  
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
