@@ -28,8 +28,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item"><a href="#" class="nav-link active">About</a></li>
-                <li class="nav-item"><a href="#workSection" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#workSection" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#projectSection" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contactUsSection"class="nav-link" >Contact</a></li>
             </ul>
@@ -41,7 +40,7 @@
 
     <!--Main Hero-->
     <div class="container hero-conatiner">  
-        <div class="container row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <!--Hero texts-->
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
             <h1 class="fw-bold lh-1 text-body-emphasis hero-title">Creating Beautiful and Functional websites</h1>
@@ -210,15 +209,29 @@
                                     </div>
                                 </form>
                                 <div class="form-message-warning mt-4"></div>
-                                <div class="form-message-success" style="display: block;">Your message was sent, we'll get back to you soon ! Thank you!</div>
+                                <div class="form-message-success" style="display: block; visibility:hidden;">Your message was sent, we'll get back to you soon ! Thank you!</div>
                             </div>
                         </div>
                     </div>
                 </div>
            </div>
         </div>
-
-
     </div> 
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2023 S. Developer, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><img src="./img/twitter-icon.svg" alt="twitter-icon" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="./img/instagram-icon.svg" alt="instagram-icon" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="./img/facebook-icon.svg" alt="facebook-icon" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
 </body>
 </html>
