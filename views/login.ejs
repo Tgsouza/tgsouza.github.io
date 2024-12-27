@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+    
+    <div class="login-card">
+        <img class="login-card-img" src="resources/login-card-image.jpg" alt="">
+        <form class="login-card-form" action="/sign-in" method="POST">
+            <h1>Welcome,</h1>
+            <p>Not admin ? <a class="request-login" href="#">Request here</a></p>
+            <input class="login-text-input" placeholder="Username" type="text" name="username">
+            <input class="login-text-input" placeholder="Password" type="password" name="password">
+            <label class="terms-label" for="terms">I agree to the <a href="#">Terms and Conditions.</a></label>
+            <input type="checkbox" name="terms" required>
+            <button class="signin-form-btn" type="submit">Sign-in</button>
+        </form>
+    </div>
+    
+<%- include("partials/footer.ejs") %>

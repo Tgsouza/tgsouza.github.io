@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+
+<div class="blog-creator-main-div">
+    <%- include("partials/blog-creator.ejs")%>
+    <form action="/sign-out" method="POST">
+        <button class="button-input" type="submit">Logout</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

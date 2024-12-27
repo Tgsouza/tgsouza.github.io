@@ -1,0 +1,56 @@
+<%- include("partials/header.ejs") %>
+
+<!--Landing page content-->
+<article class="lp-main-section">
+    <header class="main-article-header">
+        <div class="ma-header-content">
+            <h1>Cruzeiro Esporte Clube: A Legacy of Glory and Passion</h1>
+            <p>One of the most traditional and successful football clubs in Brazil, holds a special place in the hearts of fans across the nation. Founded on January 2, 1921, in Belo Horizonte, the club has built a legacy defined by its dazzling style of play, remarkable achievements, and a passionate fan base.</p>
+        </div>
+    </header>
+   
+</article>
+
+<% if(locals.posts){%>
+    <% for(i = 0; i< 3; i++){%>
+        <h1><%= posts[i].title %></h1>
+        <p><%= posts[i].content %></p>
+        <h4><%= posts[i].author %> - (<%= posts[i].date %>)</h4>
+    <% } %>
+<% }else{ %>
+    <h1>No posts</h1>
+<% } %>
+
+<%- include("partials/footer.ejs") %>
+
+
+ <!-- <section class="article-section">
+        <h2>The Origins and Evolution</h2>
+        <p>Cruzeiro's journey began under the name "Sociedade Esportiva Palestra Itália," a reflection of the Italian community that formed the club. However, during World War II, political circumstances led to a name change, and in 1942, the club officially adopted the name Cruzeiro Esporte Clube, inspired by the Southern Cross constellation, a powerful symbol in Brazilian culture.</p>
+    </section>
+    <section>
+        <h2>Golden Eras and Titles</h2>
+        <p>Cruzeiro rose to national prominence in the 1960s and 1970s, a period often referred to as the club's golden era. The arrival of legendary players like Tostão, Dirceu Lopes, and Piazza propelled the team to its first major triumph—the 1966 Taça Brasil, Brazil’s premier national competition at the time. Cruzeiro’s victory over Santos, led by Pelé, marked the beginning of the club's dominance in Brazilian football.
+            The club continued to shine on the international stage, winning its first Copa Libertadores in 1976. Cruzeiro cemented its reputation as a powerhouse by securing a second Libertadores title in 1997, under the leadership of Paulo Autuori.
+            Domestically, Cruzeiro has enjoyed immense success, winning multiple Brasileirão Série A titles, Copa do Brasil trophies, and Campeonato Mineiro championships, further solidifying its status as one of Brazil's top football institutions.</p>
+    </section>
+    <section>
+        <h2>Iconic Players and Legends</h2>
+        <p>Over the decades, Cruzeiro has been home to some of the greatest footballers in Brazilian history. Tostão, Ronaldo Nazário (Ronaldo Fenômeno), Alex, and Sorín are just a few of the legendary figures who have donned the blue jersey. Their skill, flair, and leadership on the pitch have contributed to the club’s illustrious history.</p>
+    </section>
+    <section>
+        <h2>The Fan Base and Mineirão</h2>
+        <p>Cruzeiro’s supporters, known as "A Nação Azul" (The Blue Nation), are among the most passionate in Brazil. The club’s home ground, Estádio Mineirão, serves as a fortress where fans gather to witness unforgettable matches and celebrate victories. The electric atmosphere at Mineirão reflects the deep connection between the club and its loyal supporters.</p>
+    </section>
+    <section>
+        <h2>Challenges and Revival</h2>
+        <p>Despite periods of financial difficulties and relegation in 2019, Cruzeiro's spirit remained unbroken. The club’s resurgence, driven by efforts to rebuild and restructure, reflects the resilience and determination that define Cruzeiro's identity. In 2022, under the ownership of football icon Ronaldo Nazário, the club returned to Brazil’s top-flight league, signaling the start of a new chapter.</p>
+    </section>
+    <section>
+        <h2>A Future of Promise</h2>
+        <p>As Cruzeiro looks ahead, the club remains focused on nurturing young talent, competing for major titles, and expanding its legacy. With a proud history behind them and a future full of potential, Cruzeiro Esporte Clube continues to inspire generations of football fans, embodying the essence of passion and perseverance in Brazilian football.</p>
+    </section>
+    <footer>
+        <p>Tags: <a href="#">Cruzeiro</a>, <a href="#">Brazil</a></p>
+        <p>Comments: <a href="#comments">View Comments</a></p>
+    </footer> -->

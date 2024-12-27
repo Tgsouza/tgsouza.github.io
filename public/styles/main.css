@@ -1,0 +1,238 @@
+body,html{
+    margin: 0;
+    background-color:rgba(42, 85, 165, 0.99);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+/*
+Navbar CSS
+*/
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    background-color:rgba(42, 85, 165, 0.850);
+    z-index: 1;
+}
+
+.navbar-list{
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px 0px 10px;
+    height: 60px;
+    align-items: center;
+}
+
+.navbar-icon{
+    width: 40px;
+    height: auto;
+}
+
+.navbar-center-content{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-right: 7%;
+}
+
+.navbar-center-content .navbar-list-item{
+    padding: 10px;
+}
+
+
+.navbar-admin-icon{
+    width: 25px;
+    height: auto;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-link:hover{
+    border-bottom: 1px solid black;
+    border-radius: 33%;
+    transition: 0.2s;
+}
+
+.navbar-link:active{
+    color: grey;
+}
+
+/*
+Landing page content.
+*/
+
+.main-article-header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/landing-page-img.jpg");
+    height: 100vh;
+    width: 99vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.ma-header-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+/* 
+Login page 
+*/
+
+.login-card{
+    background-color:rgba(87, 133, 219);
+    border-radius: 2%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    padding: 1%;
+}
+
+.login-card-img{
+    width: 50%;
+    height: 100%;
+    border-radius: 2%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.login-card-form{
+    width: 50%;
+    height: 100%;
+    align-content: space-around;
+}
+
+.signin-form-btn{
+    justify-self: center;
+    margin: 10px;
+    display: block;
+}
+
+.login-card-form .terms-label{
+    display: inline;
+    margin: 5px;
+}
+
+.login-text-input{
+    text-align: center;
+    margin: 20px;
+    background-color:rgb(117, 150, 211);
+    border-radius: 3%;
+    border:none;
+    height: 30px;
+    width: 300px;
+    place-self: center;
+    display: block;
+    margin: 20px;
+}
+
+.login-text-input::placeholder{
+    color: white;
+}
+
+.login-text-input:focus{
+    color: white;
+}
+
+.request-login{
+    font-size: 14px;
+}
+
+.signin-form-btn{
+    background-color:rgb(117, 150, 211);
+    border: 2px solid white;
+    color: white;
+    margin: 40px;
+    height: 40px;
+    width: 200px;
+}
+
+.signin-form-btn:hover{
+    background-color:rgb(100, 127, 177);
+    cursor: pointer;
+}
+
+/* 
+Posts styles
+*/
+
+.post-div{
+    background-color:rgb(100, 127, 177);
+    border: 1px solid white;
+    border-radius: 3%;
+    padding: 10px;
+    margin: 120px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title{
+    text-align: -webkit-left;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.author-field{
+    align-self: baseline;
+    margin-top: 0px;
+    font-weight: 300;
+}
+
+.post-content{
+    text-align: justify;
+    padding: 10px;
+}
+
+/*
+Footer
+*/
+.watermark{
+    margin: 40px;
+    display: flex;
+    font-size: 12px;
+    justify-content: end;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .login-card{
+        margin: 0px;
+    }
+    .login-card-img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("/resources/login-card-image.jpg");
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        }
+    .login-card-form{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+  }
